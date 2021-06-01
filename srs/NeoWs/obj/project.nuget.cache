@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SPC5kkxLdm+zc6j+kF1jS968vPhmXmw9AwKRFQPU/rMyvBWdmEk405OFBmpvwNkpTtBGUipBJ2e+BZwV4SopIw==",
+  "dgSpecHash": "djC9Fw6RyOO9zMisgOO+ONS/291iGGIFw3NVys/GWmzratbw+i0pB0CGAOOMAnY3lXSdmdM7n9PQGCvMf5XThg==",
   "success": true,
-  "projectFilePath": "D:\\C#Ex\\Astro_NeoWs\\srs\\NeoWs\\NeoWs.csproj",
+  "projectFilePath": "D:\\git\\AstroNeoWs\\srs\\NeoWs\\NeoWs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

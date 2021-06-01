@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\External.Nasa\External.Nasa.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mdR8Rm0rjcQjzuAstPEq2QRALSWRfvxkvAlSllwX4mpf+GX+LHUwwLas4hgp4KQopPuerPLJfHPKFhY6jZv37g==",
+  "dgSpecHash": "Kw+1NUc5Hu2Cct3R1zZE9uIdjplfxLJaIx9mN0TNnjvkZD4LALw119U/g+eHCUN0GoVUe52YkWzQ0GXG/jvOqQ==",
   "success": true,
-  "projectFilePath": "D:\\C#Ex\\Astro_NeoWs\\srs\\Models\\Models.csproj",
+  "projectFilePath": "D:\\git\\AstroNeoWs\\srs\\Models\\Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
