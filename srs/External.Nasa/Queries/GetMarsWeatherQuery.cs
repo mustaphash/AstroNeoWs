@@ -3,6 +3,7 @@ using External.NASA;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Models.MarsWeather;
 
 namespace External.Nasa.Queries
 {

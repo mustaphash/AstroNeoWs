@@ -2,7 +2,7 @@
 
 namespace Models.MarsWeather
 {
-    class MarsWeather
+    public class MarsWeather
     {
         public List<object> sol_keys { get; set; }
 

@@ -1,9 +1,10 @@
-﻿using System.Threading.Tasks;
+﻿using Models.MarsWeather;
+using System.Threading.Tasks;
 
 namespace External.Nasa.Queries.Interfaces
 {
     public interface IGetMarsWeatherQuery
     {
-        Task<MarsWeathers> ExecuteAsync();
+        Task<MarsWeather> ExecuteAsync();
     }
 }
