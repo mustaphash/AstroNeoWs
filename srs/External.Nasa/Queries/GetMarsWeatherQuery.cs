@@ -7,7 +7,7 @@ using Models.MarsWeather;
 
 namespace External.Nasa.Queries
 {
-    class GetMarsWeatherQuery : IGetMarsWeatherQuery
+    public class GetMarsWeatherQuery : IGetMarsWeatherQuery
     {
         private readonly Context _httpClientContext;
 
