@@ -2,13 +2,15 @@
 using External.Nasa.Queries.Interfaces;
 using External.NASA.Queries.Interfaces;
 using External.NASA.Services;
+using Models.MarsRoverPhoto;
 using System;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace NeoWs
 {
-    class Program
+    public class Program
     {
         static async Task Main(string[] args)
         {
@@ -20,7 +22,15 @@ namespace NeoWs
             var mars = await marsService.ExecuteAsync();
 
             IGetMarsPhotoQuery marsPhotos = new GetMarsPhotoQuery();
-            var photos = await marsPhotos.ExecuteAsync();
+            MarsPhotos photos = await marsPhotos.ExecuteAsync();
+            foreach (var photo in photos.photos)
+            {
+                using (WebClient client = new WebClient())
+                {
+                    client.DownloadFile(new Uri(photo.img_src), $@"D:\Images\MarsRover.jpg");
+                }
+            }
+           
 
             Console.WriteLine(photos.photos.Count);
             Console.WriteLine($"{mars.validity_checks.sol_hours_required}");
