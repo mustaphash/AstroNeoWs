@@ -27,7 +27,8 @@ namespace External.Nasa.Queries
             HttpResponseMessage response = await httpClient.GetAsync($"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=DEMO_KEY");
             string content = await response.Content.ReadAsStringAsync();
 
-            MarsPhotos photo = JsonConvert.DeserializeObject<MarsPhotos>(content);
+            var photo = JsonConvert.DeserializeObject<MarsPhotos>(content);
+
             return photo;
         }
     }
