@@ -5,6 +5,6 @@ namespace External.Nasa.Commands.Interfaces
 {
     public interface IFindMarsPhotosCommand
     {
-         Task<MarsPhotos> ExecuteAsync(MarsPhotos photo, string folder)
+        Task ExecuteAsync(MarsPhotos photo1, string folder);
     }
 }

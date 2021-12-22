@@ -9,18 +9,17 @@ namespace External.Nasa.Commands
     public class FindMarsPhotosCommand : IFindMarsPhotosCommand
     {
         string uniqueName = Guid.NewGuid().ToString();
-        public Task<MarsPhotos> ExecuteAsync(MarsPhotos photo,string folder)
+        public  Task ExecuteAsync(MarsPhotos photo1,string folder)
         {
-            IGetMarsPhotoQuery marsPhotos = new GetMarsPhotoQuery();
-            MarsPhotos photos = await marsPhotos.ExecuteAsync();
-            foreach (var photo in photos.photos)
+            
+            foreach (var photo in photo1.photos)
             {
                 using (WebClient client = new WebClient())
                 {
-                    client.DownloadFile(new Uri(photo.img_src), $@"D:\Images\MarsRover.jpg");
+                    client.DownloadFile(new Uri(photo.img_src), $@"{folder}\{uniqueName}.jpg");
                 }
             }
-            return Task.FromResult(photo);
+            return Task.FromResult(photo1);
         }
     }
 }
