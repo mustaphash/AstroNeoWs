@@ -8,10 +8,10 @@ namespace External.Nasa.Commands
 {
     public class FindMarsPhotosCommand : IFindMarsPhotosCommand
     {
-        string uniqueName = Guid.NewGuid().ToString();
         public  Task ExecuteAsync(MarsPhotos photo1,string folder)
         {
-            
+            string uniqueName = Guid.NewGuid().ToString();
+
             foreach (var photo in photo1.photos)
             {
                 using (WebClient client = new WebClient())
